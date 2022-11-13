@@ -1,0 +1,38 @@
+@mixin df{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin btn{
+  background: #F57059;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 10px 25px;
+  transition: .4s;
+  &:hover{
+    background: transparent;
+    transform: scale(1,1);
+    color: blue;
+  }
+}
+@mixin btn1{
+  background: #000000;
+ color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 30px;
+  transition: .4s;
+  &:hover{
+    background: transparent;
+    transform: scale(1,1);
+    color: blue;
+  }
+}
+
+@mixin da{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
