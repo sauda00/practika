@@ -5,8 +5,12 @@
 
 #header {
   //font-family: $font;
+  background: #b9b9c0;
   padding-top: 20px;
-
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: 10px 0;
   .header {
     @include df;
 
@@ -601,7 +605,7 @@
       }
     }
     h1{
-      font-family: 'Gilroy-SemiBold';
+      font-family: 'Gilroy-SemiBold',sans-serif;
       font-size: 22px;
       line-height: 26px;
       text-align: center;
@@ -645,91 +649,7 @@
 
     }
 
-    &--three{
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-top: 90px;
-      position: relative;
-      left: 900px;
-      top: -20px;
-      &__start{
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      h4{
-        font-weight: 800;
-        font-size: 16px;
-        letter-spacing: -0.03em;
-        color: #000000;
-      }
-      p{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.02em;
-        color: #64607D;
-        width: 300px;
-      }
-    }
-    &--nor{
-      display: flex;
-      justify-content: center;
-      position: relative;
-      left: 650px;
-      top: 0;
-      &__own{
-        h2{
-          font-weight: 800;
-          font-size: 16px;
-          letter-spacing: -0.03em;
-          color: #000000;
-          margin-top: 90px;
-        }
-        P{
-          font-family: $font;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 30px;
-          letter-spacing: -0.02em;
-          color: #64607D;
-          width: 300px;
-        }
-      }
-      &__tur{
-        position: absolute;
-        top: 0;
-        //left: 635px;
-      }
-    }
-    &--one{
-      display: flex;
-      justify-content: flex-start;
-      padding-top: 90px;
-      position: relative;
-      left: 150px;
-      top: -30px;
-      &__stop{
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      h4{
-        font-weight: 800;
-        font-size: 16px;
-        letter-spacing: -0.03em;
-        color: #000000;
-      }
-      p{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.02em;
-        color: #64607D;
-        width: 300px;
-      }
-    }
+
     &--long{
       position: relative;
       top: -40px;
@@ -737,9 +657,94 @@
         position: absolute;
         top: 0;
         left: 0;
+        &--three{
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-top: 90px;
+          position: relative;
+          left: 900px;
+          top: -20px;
+          &__start{
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          h4{
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: -0.03em;
+            color: #000000;
+          }
+          p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: #64607D;
+            width: 300px;
+          }
+        }
+        &--nor{
+          display: flex;
+          justify-content: center;
+          position: relative;
+          left: 569px;
+          top: 0;
+          &__own{
+            h2{
+              font-weight: 800;
+              font-size: 16px;
+              letter-spacing: -0.03em;
+              color: #000000;
+              margin-top: 90px;
+            }
+            P{
+              font-family: $font;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 30px;
+              letter-spacing: -0.02em;
+              color: #64607D;
+              width: 300px;
+            }
+          }
+          &__tur{
+            position: absolute;
+            top: 0;
+            //left: 635px;
+          }
+        }
+        &--one{
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 90px;
+          position: relative;
+          left: 150px;
+          top: -30px;
+          &__stop{
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          h4{
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: -0.03em;
+            color: #000000;
+          }
+          p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: #64607D;
+            width: 300px;
+          }
+        }
       }
       &__line{
-
+       width: 90%;
       }
     }
   }
@@ -818,7 +823,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 1200px;
+        //width: 1200px;
         height: 170px;
         h1{
           font-weight: 800;
@@ -1093,6 +1098,9 @@
         }
       }
       &__remove{
+        img{
+          width: 90%;
+        }
         &--blue{
           p{
             font-weight: 500;
